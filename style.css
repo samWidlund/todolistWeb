@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    margin: 0;    /* Remove default margin */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;     /* Center items vertically */
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+#centerContainer{
+    display: grid;
+    justify-content: center; 
+    align-items: center;     
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 100px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+#taskList{
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+#completedTasksContainer{
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+#date{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#wrapPlaceholders{
+    display:flex;
+}
+
+#enterDateTextbox{
+    display: inline-block;
+}
+
+#addTaskTextbox{
+    display: none;
+}
+
+/* Responsible */
+@media (max-width: 600px) {
+    #enterDateTextbox {
+        margin-bottom: 10px; 
+    }
+}
