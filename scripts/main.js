@@ -10,7 +10,7 @@ let taskId = 0;
 
 addTask.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
-        addTaskTextbox.placeholder = "Enter task";
+        addTaskTextbox.placeholder = "enter task";
         taskPlaceholder.style.display = 'none';
 
         const taskInput = addTask.value;
@@ -48,6 +48,8 @@ resetTaskButton.addEventListener('click', function() {
 
     completedTasksContainer.style.display = 'none';
     taskList.style.display = 'inline';
+
+    addTaskTextbox.placeholder = "enter task";
 });
 
 function removeAllTasks() {
