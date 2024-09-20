@@ -4,33 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GYST!</title>
+    <title>GYST</title>
 </head>
 <body>
-    <div id="centerContainer">
-        <h1>get your shit together!</h1>
-        <div id="inputContainer">
-            <input type="text" id="enterDateTextbox" placeholder="enter date"/>
-            <input type="text" id="addTaskTextbox" placeholder="enter task"/>
-        </div>
-        <div id="date">
-            e.g. 'xxxx-xx-xx'
-        </div>
-        <div id="taskList">
-            <div id="wrapPlaceholders">
-                <div id="taskPlaceholder"> - taskPlaceholder</div>
+    <div id="backgroundContainer">
+        <div id="centerContainer">
+            <h1>gyst!</h1>
+            <div id="inputContainer">
+                <input type="text" id="enterDateTextbox" placeholder="enter date"/>
+                <input type="text" id="addTaskTextbox" placeholder="enter task"/>
             </div>
+            <div id="date">
+                e.g. 'xxxx-xx-xx'
+            </div>
+            <div id="taskList">
+                <div id="wrapPlaceholders">
+                    <div id="taskPlaceholder"> - taskPlaceholder</div>
+                </div>
+            </div>
+            <div id="completedTasksContainer">
+                you made it! 
+                <br>
+                <br>
+                all tasks are completed :)
+            </div>
+    
+            <button id="resetButton">reset</button>  
+            
+            <!-- <button id="testingButton">testingButton</button>     -->
         </div>
-        <div id="completedTasksContainer">
-            you made it! 
-            <br>
-            <br>
-            all tasks are completed :)
-        </div>
-
-        <button id="resetButton">reset</button>  
-        
-        <!-- <button id="testingButton">testingButton</button>     -->
     </div>
 </body>
 <script src="scripts/main.js"></script>
